@@ -7,13 +7,13 @@ router.get('/', function(req, res, next) {
     if(req.query.fibonum){
         //Calculate directly in this server
         res.render('fibonacci', {
-            title: "Calculate Fibonacci numbers",
+            title: "Predict Chemicals",
             fibonum: req.query.fibonum,
-            fiboval: math.fibonacci(req.query.fibonum)
+            fiboval: math.chemical(req.query.fibonum)
         });
     } else {
         res.render('fibonacci', {
-            title: "Calculate fibonacci numbers",
+            title: "Predict Chemicals",
             fiboval: undefined
         });
     }

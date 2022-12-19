@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: "Welcome to the Fibonacci Calculator" });
+  res.render('index', { title: "Welcome to chemical predictor" });
 });
 
 module.exports = router;
