@@ -1,5 +1,18 @@
 {
+  "name": "fibonacci",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "server": "cross-env SERVERPORT=3002 node ./fiboserver",
+    "client": "cross-env SERVERPORT=3002 node ./fiboclient"
+  },
   "dependencies": {
-    "express": "^4.18.2"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }
