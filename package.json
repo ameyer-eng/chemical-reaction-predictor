@@ -1,5 +1,5 @@
 {
-  "name": "fibonacci",
+  "name": "chemical-rxn-predictor",
   "version": "0.0.0",
   "private": true,
   "scripts": {

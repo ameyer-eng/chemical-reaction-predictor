@@ -1,12 +1,12 @@
 <h1>{{title}}</h1>
 {{>navbar}}
 {{#if fiboval}}
-    <p> Mixing {{fibonum}} </p>
-     <p>Produces {{fiboval}}</p>
+    <p> <b>Mixing:</b> {{fibonum}} </p>
+     <p> <b>Produces  {{fiboval}}</b></p>
     <hr/>
 {{/if}}
 <p>Enter sum chemicals!</p>
-<form name ='fibonacci' action ='/fibonacci' method="get">
+<form name ='chemical' action ='/chemical' method="get">
 <input type ='text' name='fibonum' />
 <input type ='submit' value='Submit' />
 </form>

@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-const fibonacci= require('./routes/fibonacci');
+const chemical= require('./routes/chemicals');
 
 
 const app = express();
@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/fibonacci', fibonacci);
+app.use('/chemical', chemical);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
