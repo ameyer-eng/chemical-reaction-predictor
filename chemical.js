@@ -1,7 +1,12 @@
 
 //import * as ions from './ions.mjs'
 const positive_ions = ["sodium", "potassium", "magnesium", "calcium", "strontium", "barium", "aluminium","iron(ii)","iron(iii)","copper","zinc", "ammonium", "hydrogen"];
+
+const positive_ion_letters = ["Na", "K", "Mg", "Ca", "Sr", "Ba", "Al","Fe","Fe","Cu","Zn", "NH3", "H"];
+
 const negative_ions = ["chloride", "bromide", "iodide", "oxide", "hydroxide", "perchlorate", "nitrate", "acetate", "carbonate", "sulfate", "oxalate", "phosphate"];
+
+
 
 const Insoluable_salt_list_names = [
     "magnesium oxide", "magnesium hydroxide", "magnesium phosphate",  //magnesiums
