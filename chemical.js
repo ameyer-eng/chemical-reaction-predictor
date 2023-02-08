@@ -1,5 +1,9 @@
 
-//import * as ions from './ions.mjs'
+
+
+
+
+
 const positive_ions = ["sodium", "potassium", "magnesium", "calcium", "strontium", "barium", "aluminium","iron(ii)","iron(iii)","copper","zinc", "ammonium", "hydrogen"];
 
 const positive_ion_letters = ["Na", "K", "Mg", "Ca", "Sr", "Ba", "Al","Fe","Fe","Cu","Zn", "NH3", "H"];
@@ -59,6 +63,12 @@ var salt1, salt2;
 salt1 = input_list[0] + " " + input_list[3];
 salt2 = input_list[2] + " " + input_list[1];
 
+salt1_link = to_wiki_link(input_list[0], input_list[3]);
+salt2_link = to_wiki_link(input_list[2], input_list[1]);
+
+
+to_wiki_link(input_list[0], input_list[3]);
+
 console.log(`${salt1} is a possible reaction salt`);
 console.log(`${salt2} is a possible reaction salt`);
 
@@ -75,4 +85,25 @@ else {
     console.log('No reaction will occur.')
     return 'No reaction';
 }
+}
+
+function to_wiki_link(ion1, ion2){
+    //convert ion1 first letter to upper case
+    if(ion1 === 'copper'){
+        ion1 = 'copper(II)';
+    }
+    ion1_upper = ion1[0].toUpperCase() + ion1.slice(1);
+
+    const wiki_base = `https://en.wikipedia.org/wiki/`
+    let chemical_result = ion1_upper +'_' + ion2;
+    let link_txt = ion1_upper + ' ' + ion2;
+
+    let wiki_url = wiki_base + chemical_result;
+
+    let full_link = `<a href="${wiki_url}">${link_txt}</a>`
+
+
+
+    console.log(full_link);
+    return full_link;
 }

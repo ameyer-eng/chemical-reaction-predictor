@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
         res.render('chemicals', {
             title: "Predict Chemicals",
             fibonum: req.query.fibonum,
-            fiboval: chemical(req.query.fibonum)
+            fiboval: math.chemical(req.query.fibonum)
         });
     } else {
         res.render('chemicals', {
