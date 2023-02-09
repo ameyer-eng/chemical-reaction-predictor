@@ -1,5 +1,5 @@
 
-
+// Make it return an array with links and salt names. 
 
 
 
@@ -74,16 +74,17 @@ console.log(`${salt2} is a possible reaction salt`);
 
 if(Insoluable_salt_list_names.includes(salt1)){
     console.log(`${salt1} will precipitate out and leave ${salt2} in solution.`);
-    return `${salt1} will precipitate out and leave ${salt2} in solution.` ;
+    
+    return [true, salt1, salt1_link, salt2, salt2_link];
     
 }
 else if(Insoluable_salt_list_names.includes(salt2)){
     console.log(`${salt2} will precipitate out and leave ${salt1} in solution.`);
-    return`${salt2} will precipitate out and leave ${salt1} in solution.`
+    return [true, salt2, salt2_link, salt1, salt1_link];
 }
 else {
     console.log('No reaction will occur.')
-    return 'No reaction';
+    return [false, null, null];
 }
 }
 
@@ -96,14 +97,14 @@ function to_wiki_link(ion1, ion2){
 
     const wiki_base = `https://en.wikipedia.org/wiki/`
     let chemical_result = ion1_upper +'_' + ion2;
-    let link_txt = ion1_upper + ' ' + ion2;
+    //let link_txt = ion1_upper + ' ' + ion2;
 
     let wiki_url = wiki_base + chemical_result;
 
-    let full_link = `<a href="${wiki_url}">${link_txt}</a>`
 
 
 
-    console.log(full_link);
-    return full_link;
+
+    //console.log();
+    return wiki_url;
 }
