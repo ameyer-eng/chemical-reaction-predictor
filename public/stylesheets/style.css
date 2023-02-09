@@ -1,9 +1,61 @@
-body {
-  text-align: center;
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
-a {
-  color: #00B7FF;
+/* 2688x1242px at 458ppi */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) {
+      body {
+        text-align: center;
+        font-size: 6em;
+        padding: 50px;
+        font: "Lucida Grande", Helvetica, Arial, sans-serif;
+      }
+      
+      a {
+        color: #00B7FF;
+      }
+     }
+
+/* 2436x1125px at 458ppi */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+      body {
+        text-align: center;
+        font-size: 6em;
+        padding: 50px;
+        font: "Lucida Grande", Helvetica, Arial, sans-serif;
+      }
+      
+      a {
+        color: #00B7FF;
+      }
+     }
+
+ 
+
+ 
+
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  body {
+    text-align: center;
+    font-size: 16px;
+    padding: 50px;
+    font: "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+  a {
+    color: #00B7FF;
+  }
+
 }
+ 
+
+
+
+
+
+
