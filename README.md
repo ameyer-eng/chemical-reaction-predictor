@@ -1,8 +1,6 @@
-# chem_stuph_w_node
+# Predict chemical reactions
 
-## Predict chemical reactions
-
-### Type in chemicals to see the predicted reaction.  
+## Type in chemicals to see the predicted reaction.  
 Actual chemical names (iron(II) sulfate...barium nitrate...etc) must be used. I have not added support for bad spelling or common names such as baking soda or vinegar. 
 
 ## Learning node and express 
