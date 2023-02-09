@@ -1,11 +1,11 @@
 # chem_stuph_w_node
 
-## the "Google" for chemical reactions
+## Predict chemical reactions
 
-Type in chemicals(using their actual chemical names...copper sulfate...etc) to see the predicted reaction
+### Type in chemicals to see the predicted reaction.  
+Actual chemical names (iron(II) sulfate...barium nitrate...etc) must be used. I have not added support for bad spelling or common names such as baking soda or vinegar. 
 
 ## Learning node and express 
 
-Part of code for this is from Ch 4 of "Node.js Web Development" 5th Edition by David Herron
+This is a project I am working on to learn node.js and express with handlebars view engine. 
 
-The other part of the code I made up from a chemical solubility table and some basic logic. 
